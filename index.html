@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard NDVI & Carbon Stock Kideco</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial;
-      background: #f4f6f8;
-    }
-    a {
-      padding: 16px 32px;
-      background: #1f2d3d;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>KIDECO – Web GIS NDVI & Carbon Stock</title>
+
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+  height: 60px;
+  background: #1f2d3d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* MAP AREA */
+main {
+  height: calc(100% - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f5;
+}
+
+/* BUTTON */
+a.open-gee {
+  padding: 18px 36px;
+  background: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+a.open-gee:hover {
+  background: #004c99;
+}
+
+/* FOOTER */
+footer {
+  height: 60px;
+  background: #1f2d3d;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+</style>
 </head>
+
 <body>
 
-<a href="https://projectptkja.projects.earthengine.app/view/ndvi-carbon" target="_blank">
-  🚀 Dashboard NDVI & Carbon Stock
-</a>
+<header>
+  KIDECO Dashboard Carbon Stock Estimation
+</header>
+
+<main>
+  <a class="open-gee"
+     href="https://projectptkja.projects.earthengine.app/view/ndvi-carbon"
+     target="_blank">
+     🌍 Buka Web GIS NDVI & Carbon Stock
+  </a>
+</main>
+
+<footer>
+  © 2026 | Web GIS NDVI & Carbon Stock | Powered by Google Earth Engine
+</footer>
 
 </body>
 </html>
