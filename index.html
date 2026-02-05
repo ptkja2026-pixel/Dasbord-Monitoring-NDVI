@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Dashboard Monitoring Reklamasi Menggunakan NDVI</title>
+  <meta charset="UTF-8" />
+  <title>KIDECO Dashboard Carbon Stock Estimation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-html, body {
-  margin: 0;
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* HEADER */
-header {
-  height: 60px;
-  background: #1f2d3d;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: bold;
-}
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* MAP AREA */
-main {
-  height: calc(100% - 120px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef2f5;
-}
+    /* HEADER */
+    header {
+      height: 60px;
+      background: #1f2f3f;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-/* BUTTON */
-a.open-gee {
-  padding: 18px 36px;
-  background: #0066cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 18px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
+    /* MAP CONTAINER */
+    main {
+      flex: 1;
+      position: relative;
+    }
 
-a.open-gee:hover {
-  background: #004c99;
-}
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
-/* FOOTER */
-footer {
-  height: 60px;
-  background: #1f2d3d;
-  color: #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-}
-</style>
+    /* FOOTER */
+    footer {
+      height: 40px;
+      background: #1f2f3f;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  KIDECO Dashboard Carbon Stock Estimation
-</header>
+  <header>
+    KIDECO Dashboard Carbon Stock Estimation
+  </header>
 
-<main>
-  <a class="open-gee"
-     href="https://projectptkja.projects.earthengine.app/view/ndvi-carbon"
-     target="_blank">
-     🌍 Buka Web GIS NDVI & Carbon Stock
-  </a>
-</main>
+  <main>
+    <iframe 
+      src="https://projectptkja.projects.earthengine.app/view/ndvi-carbon"
+      allowfullscreen>
+    </iframe>
+  </main>
 
-<footer>
-  © 2026 | PT Kideco Jaya Agung | Powered by Google Earth Engine
-</footer>
+  <footer>
+    © 2026 | PT Kideco Jaya Agung | Powered by Google Earth Engine
+  </footer>
 
 </body>
 </html>
